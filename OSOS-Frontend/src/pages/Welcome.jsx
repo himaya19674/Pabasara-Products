@@ -1,12 +1,12 @@
-import Navbar1 from '../components/Navbar1'; // Authenticated user navbar
+import Navbar from '../components/Navbar'; // Assuming you have these components
 import Footer from '../components/Footer';
 import bg from '../assets/Sweets.jpg'; // Using same background as login
 
-export default function Home() {
+export default function Welcome() {
   
   return (
     <div>
-      <Navbar1 />
+      <Navbar />
       <div 
         className="relative h-screen flex justify-center items-center bg-cover bg-center"
         style={{ backgroundImage: `url(${bg})` }}

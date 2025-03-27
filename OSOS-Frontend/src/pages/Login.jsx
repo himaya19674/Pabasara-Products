@@ -27,7 +27,7 @@ export default function Login() {
       setUsername('');
       setPassword('');
       console.log('Logged in user:', response.data.data);
-      setTimeout(() => navigate('/'), 2000); // Redirect to UserProfile instead of dashboard
+      setTimeout(() => navigate('/home'), 2000); // Redirect to UserProfile instead of dashboard
     } catch (error) {
       if (error.response) {
         setErrMsg(error.response.data.error);
@@ -53,7 +53,7 @@ export default function Login() {
         {success ? (
           <div className="text-white text-center">
             <h1>Login Successful!</h1>
-            <p>Redirecting to your profile...</p>
+           
           </div>
         ) : (
           <>
